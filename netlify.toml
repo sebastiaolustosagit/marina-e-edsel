@@ -48,4 +48,4 @@
 [[redirects]]
   from = "/"
   to = "/marina-e-edsel/"
-  status = 200
+  status = 301
