@@ -47,7 +47,10 @@
     <!-- HERO — Arquétipo: Layered Atmospheric -->
     <section class="hero" id="hero">
       <div class="hero__layers">
-        <img src="hero.jpeg" alt="" width="1200" height="1600" class="hero__img" decoding="async">
+        <picture class="hero__picture">
+          <source media="(min-width: 768px)" srcset="hero-desktop.jpeg" width="1920" height="1071">
+          <img src="hero.jpeg" alt="" width="1024" height="1536" class="hero__img" decoding="async">
+        </picture>
         <div class="hero__gradient"></div>
         <div class="hero__content" data-aos="fade-up" data-aos-duration="1200">
           <div class="hero__ornament">
