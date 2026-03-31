@@ -1,8 +1,8 @@
 [build]
-  publish = "."
+  publish = "marina-e-edsel"
 
 [dev]
-  publish = "."
+  publish = "marina-e-edsel"
   port = 8888
   framework = "#static"
   autoLaunch = false
@@ -44,8 +44,3 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Redirect página principal
-[[redirects]]
-  from = "/"
-  to = "/marina-e-edsel/"
-  status = 301
