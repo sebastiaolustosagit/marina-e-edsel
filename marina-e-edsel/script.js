@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initAOS();
   initNav();
+  initRsvpForm();
   initYear();
 });
 
@@ -81,6 +82,93 @@ function initNav() {
       closeMenu();
     }
   });
+}
+
+/* ==========================================
+   RSVP — Confirmação de presença (Netlify Forms)
+   ========================================== */
+
+function initRsvpForm() {
+  const form = document.querySelector('[data-rsvp-form]');
+  if (!form) return;
+
+  const feedback = form.querySelector('[data-rsvp-feedback]');
+  const submitBtn = form.querySelector('.rsvp__submit');
+
+  function showFeedback(type, msg) {
+    if (!feedback) return;
+    feedback.textContent = msg;
+    feedback.classList.remove('success', 'error');
+    feedback.classList.add('show', type);
+  }
+
+  function clearErrors() {
+    form.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    clearErrors();
+
+    const nome = form.querySelector('#rsvp-nome');
+    const radios = form.querySelector('.rsvp__radios');
+    const comparecimento = form.querySelector('input[name="comparecimento"]:checked');
+
+    let valid = true;
+    if (!nome.value.trim()) {
+      nome.classList.add('error');
+      valid = false;
+    }
+    if (!comparecimento) {
+      radios.classList.add('error');
+      valid = false;
+    }
+    if (!valid) {
+      showFeedback('error', 'Por favor, preencha seu nome e diga se vai comparecer.');
+      return;
+    }
+
+    // Grava no banco (Supabase) via Netlify Function — sem sair da página
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Enviando...';
+
+    const data = new FormData(form);
+    const body = new URLSearchParams(data).toString();
+
+    try {
+      const res = await fetch('/.netlify/functions/rsvp-submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body
+      });
+      const result = await res.json().catch(() => ({}));
+      if (!res.ok || !result.ok) throw new Error('HTTP ' + res.status);
+      renderSuccess(form, comparecimento.value);
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Confirmar Presença';
+      showFeedback('error', 'Algo deu errado ao enviar. Por favor, tente novamente em instantes.');
+    }
+  });
+}
+
+function renderSuccess(form, comparecimento) {
+  const veio = /^Sim/i.test(comparecimento);
+  const wrap = document.createElement('div');
+  wrap.className = 'rsvp__success';
+  wrap.setAttribute('role', 'status');
+  wrap.innerHTML = `
+    <div class="rsvp__success-icon" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M8 16.5 L13.5 22 L24 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <h3 class="rsvp__success-title">${veio ? 'Presença confirmada!' : 'Recebemos sua resposta'}</h3>
+    <p class="rsvp__success-text">${veio
+      ? 'Que alegria! Mal podemos esperar para celebrar esse dia com você. 💛'
+      : 'Obrigado por avisar. Sentiremos sua falta, mas agradecemos o carinho. 💛'}</p>
+  `;
+  form.replaceWith(wrap);
 }
 
 /* ==========================================

@@ -2,11 +2,11 @@
 
 ## SEO
 - **Title:** Marina & Édsel — 05 de Setembro de 2026 | Casamento na Praia de Maracajaú
-- **Description:** Celebre conosco! Site oficial do casamento de Marina & Édsel. 05 de setembro de 2026, às 15h, na Praia de Maracajaú — RN.
+- **Description:** Celebre conosco! Site oficial do casamento de Marina & Édsel. 05 de setembro de 2026, às 15h30, na Buji — Praia de Maracajaú, RN.
 
 ## Open Graph
 - **og:title:** Marina & Édsel — Casamento na Praia de Maracajaú
-- **og:description:** 05 de setembro de 2026, às 15h. Venha celebrar esse momento especial conosco!
+- **og:description:** 05 de setembro de 2026, às 15h30, na Buji. Venha celebrar esse momento especial conosco!
 - **og:type:** website
 
 ---
@@ -50,9 +50,11 @@ Aguardamos vocês no nosso grande dia!
 **Título:** Cerimônia e Festa
 
 **Texto:**
-Gostaríamos muito de contar com a presença de todos nossos amigos e familiares para celebrar a nossa união. A cerimônia ocorrerá no dia 05 de setembro de 2026, às 15h, na Praia de Maracajaú, Maxaranguape — RN, e a festa ocorrerá logo após, no mesmo local.
+Gostaríamos muito de contar com a presença de todos nossos amigos e familiares para celebrar a nossa união. A cerimônia ocorrerá no dia 05 de setembro de 2026, às 15h30, na Buji — Praia de Maracajaú, Maxaranguape/RN. Não há igreja: a cerimônia e a festa acontecem no mesmo local, na Buji.
 
-**Mapa:** Embed Google Maps — Praia de Maracajaú, Maxaranguape - RN
+**Fotos:** local-buji.jpeg (entrada/arco da Buji) + local-jardim.jpeg (gramado à beira-mar). A antiga local-praia.jpeg (igreja) saiu de uso.
+
+**Mapa:** Embed Google Maps — Buji, Maracajaú, Maxaranguape - RN
 
 ---
 
@@ -109,39 +111,30 @@ Algumas dicas de salões na região para quem precisar arrumar cabelo e maquiage
 **Título:** Lista de Presentes
 
 **Texto introdutório:**
-Se quiser nos presentear, ficamos muito felizes! Escolha um dos itens abaixo e faça sua contribuição via PIX. Qualquer valor é bem-vindo e nos ajuda a construir nosso novo lar.
+Nosso maior sonho agora é viver uma lua de mel inesquecível. Se quiser fazer parte desse momento, escolha uma das experiências abaixo e contribua via PIX. Os valores são apenas sugestões — qualquer quantia é muito bem-vinda!
 
-**Chave PIX:** *(placeholder — o casal deve informar)*
-**Nome:** Marina [Sobrenome]
+**Chave PIX:** mariamarinaleo@gmail.com (e-mail)
+**Nome:** Marina Leonardo
 **Banco:** *(placeholder)*
 
-**Itens da lista (exemplos visuais — mesmos do site original):**
+**Itens (12 experiências de lua de mel — só coisas de viagem), em ordem crescente de R$150 a R$3.000. Miniaturas em aquarela geradas via GPT Image 2 (Codex 5.5): gift-*.webp. Valores SUGERIDOS (o casal pode ajustar):**
 
-| Item | Valor |
-|------|-------|
-| 2 Passagens Aéreas para a Lua de Mel | R$ 1.884,54 |
-| Adega 33 Garrafas Compressor | R$ 4.259,06 |
-| Adega de vinhos | R$ 2.763,99 |
-| Adega de vinhos termoelétrica | R$ 1.757,65 |
-| Almoço romântico | R$ 628,18 |
-| Aluguel de barco privado | R$ 1.130,72 |
-| Aparador design contemporâneo | R$ 3.139,64 |
-| Aparador Muse | R$ 1.093,03 |
-| Aparelho de jantar | R$ 538,98 |
-| Aparelho de Jantar | R$ 452,29 |
-| Aparelho de jantar | R$ 375,65 |
-| Aparelho de jantar em porcelana | R$ 727,43 |
-| Aparelho de Jantar Polka Dots 20 Peças | R$ 446,01 |
-| Aparelho de jantar Ópera | R$ 395,75 |
-| Aspirador Robô Keep Clean | R$ 1.821,72 |
-| Batedeira Planetária Bowl 750W | R$ 621,90 |
-| Batedeira preta | R$ 540,23 |
-| Batedeira Stand Mixer | R$ 2.511,46 |
-| Batedeira Stand Mixer Bowl Inox | R$ 3.140,90 |
-| Blu-Ray | R$ 628,18 |
-| Cafeteira cltiz 1260W | R$ 866,89 |
+| Item | Valor sugerido | Imagem |
+|------|----------------|--------|
+| Mergulho nos Parrachos | R$ 150 | gift-mergulho.webp |
+| Passeio de Barco | R$ 250 | gift-barco.webp |
+| Passeio de Buggy nas Dunas | R$ 350 | gift-buggy.webp |
+| Café da Manhã na Cama | R$ 500 | gift-cafe.webp |
+| Jantar de Lua de Mel | R$ 650 | gift-jantar.webp |
+| Passeio de Catamarã ao Pôr do Sol | R$ 800 | gift-catamara.webp |
+| Spa & Massagem a Dois | R$ 950 | gift-spa.webp |
+| Passagens Aéreas | R$ 1.000 | gift-passagem.webp |
+| Aluguel de Carro na Viagem | R$ 1.200 | gift-carro.webp |
+| Ensaio Fotográfico do Casal | R$ 1.500 | gift-ensaio.webp |
+| Diárias de Hotel na Praia | R$ 2.000 | gift-hotel.webp |
+| Pacote Completo de Lua de Mel | R$ 3.000 | gift-pacote.webp |
 
-**Botão:** Presentear via PIX
+**Botão:** Presentear (copia a chave PIX)
 
 ---
 
@@ -149,12 +142,15 @@ Se quiser nos presentear, ficamos muito felizes! Escolha um dos itens abaixo e f
 
 **Título:** Confirme sua Presença
 
-**Texto:** Ficaremos muito felizes com a sua presença! Clique no botão abaixo para confirmar pelo WhatsApp.
+**Texto:** Ficaremos muito felizes com a sua presença! Confirme o quanto antes para garantir sua hospedagem com tranquilidade.
 
-**Botão:** Confirmar pelo WhatsApp
+**Formulário (grava no Supabase via Netlify Function):** Nome completo (obrigatório), Você vai comparecer? (Sim/Não, obrigatório), Quantas pessoas. WhatsApp e Recado foram REMOVIDOS a pedido do casal. Envia via AJAX para `/.netlify/functions/rsvp-submit` e mostra "Presença confirmada!" na própria página.
 
-**WhatsApp:** *(placeholder — número do casal)*
-**Mensagem pré-preenchida:** Olá! Gostaria de confirmar minha presença no casamento de Marina & Édsel no dia 05/09/2026.
+**Banco de dados:** Supabase projeto `opmyeulzfinndcqbaeaz` (Projetos Germano), tabela `public.rsvp_marina_edsel` (colunas: id, created_at, nome, comparecimento, pessoas). RLS ligado; acesso só via service key nas functions.
+
+**Painel da dona do site:** `/painel.html` (ou `/painel`) — protegido por senha (`DASHBOARD_PASSWORD` no Netlify, valor inicial `MarinaEEdsel2026`). Lê via `/.netlify/functions/rsvp-list` (senha conferida no servidor). Mostra cards (confirmados, total de convidados, não poderão ir, total de respostas) + tabela.
+
+**Env vars Netlify:** `SUPABASE_URL`, `SUPABASE_SERVICE_KEY`, `DASHBOARD_PASSWORD`.
 
 ---
 

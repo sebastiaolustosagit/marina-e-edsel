@@ -1,6 +1,10 @@
 [build]
   publish = "marina-e-edsel"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [dev]
   publish = "marina-e-edsel"
   port = 8888
